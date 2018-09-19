@@ -1,0 +1,25 @@
+{
+  "name": "09_mern",
+  "version": "1.0.0",
+  "description": "Shopping list built with the MERN stack",
+  "main": "server.js",
+  "scripts": {
+	"install-all": "npm install && npm install --prefix client",
+	"client-install": "npm install --prefix client",
+	"start": "node server.js",
+	"server": "nodemon server.js",
+	"client": "npm start --prefix client",
+	"dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Tomislav Peric",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
